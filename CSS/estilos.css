@@ -441,7 +441,7 @@ body {
 }
 
 /* ===== Responsive Styles ===== */
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
     .nav__toggle {
         display: block; /* Mostrar el ícono de menú */
         cursor: pointer;

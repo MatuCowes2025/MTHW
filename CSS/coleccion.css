@@ -1,0 +1,225 @@
+/* === RESET BÁSICO === */
+/* Elimina márgenes por defecto y define fondo, tipografía y color general */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Fondo oscuro */
+  color: #f5f5f5; /* Texto claro */
+}
+
+/* HEADER */
+/* Estilos del encabezado principal */
+.main-header {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-header h1 {
+  margin: 0.5rem 0;
+}
+
+.main-header nav {
+  margin-top: 0.5rem;
+}
+
+.nav-link {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #444;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: #666;
+}
+
+/* === CATÁLOGO DE PRODUCTOS === */
+/* Contenedor principal de todo el catálogo */
+.catalogo {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Espacio entre secciones (remeras, buzos, etc.) */
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 2rem auto; /* Centrado horizontal */
+}
+
+/* === TÍTULOS DE CATEGORÍA === */
+.catalogo h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+}
+
+/* CARRUSEL DE PRODUCTOS */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #1e1e1e; /* Fondo oscuro para el item */
+  border-radius: 12px; /* Bordes redondeados */
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  display: flex;
+  justify-content: center; /* Centra todo el contenido horizontalmente */
+  align-items: center; /* Centra todo el contenido verticalmente */
+  gap: 1rem; /* Espacio entre la imagen y el texto */
+}
+
+/* Efecto hover para agrandar el elemento y resaltar */
+.carousel-item:hover {
+  transform: scale(1.05); /* Efecto de aumento en hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa en hover */
+}
+
+/* Imágenes dentro de los items */
+.carousel-item img {
+  width: 40%; /* Ajustamos el tamaño de la imagen al 40% */
+  max-width: 220px; /* Limita el tamaño máximo de la imagen */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Estilo del texto (título y párrafo) */
+.carousel-item .texto {
+  color: #f5f5f5; /* Texto claro */
+  display: flex;
+  flex-direction: column; /* Coloca el título y el párrafo en una columna */
+  justify-content: flex-start; /* Alinea el contenido al principio */
+  text-align: center; /* Centra el texto */
+  gap: 0.5rem; /* Espacio entre el título y el párrafo */
+  width: 50%; /* Ajustamos el ancho del texto */
+}
+
+.carousel-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center; /* Centra el título */
+  white-space: nowrap; /* Evita que el título se divida en varias líneas */
+}
+
+.carousel-item p {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+  text-align: center; /* Centra el párrafo */
+  white-space: normal; /* Permite que el párrafo se divida en varias líneas */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* BOTONES DE NAVEGACIÓN DEL CARRUSEL */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* === MEDIA QUERIES PARA RESPONSIVE (celulares) === */
+@media (max-width: 600px) {
+  .main-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .detalle-button {
+    width: 100%;
+    padding: 0.7rem;
+  }
+
+  .producto {
+    width: 100%;
+    max-width: none;
+  }
+
+  .productos-grid {
+    gap: 1rem;
+  }
+
+  .catalogo {
+    padding: 1rem;
+  }
+
+  /* Tamaño de flechas reducido en móviles */
+  .arrow-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* FLECHAS DE NAVEGACIÓN ENTRE PÁGINAS */
+.navigation-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: absolute; /* Superpuestas sobre el contenido */
+  top: 1rem;
+  left: 0;
+  right: 0;
+  z-index: 10; /* Asegura que estén por encima de otros elementos */
+}
+
+.arrow-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}

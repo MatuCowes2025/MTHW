@@ -1253,5 +1253,44 @@ nav {
     font-weight: bold;
     font-size: 18px;
   }
-  
+
+/* Ajustes básicos para que todo se vea bien en móviles */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-size: 16px;
+}
+
+/* Hace que textos como títulos se achiquen en pantallas chicas */
+.hero__title, .subtitle, .footer__title {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+/* Mejora espaciado en celulares */
+@media (max-width: 600px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    .about__main {
+        grid-template-columns: 1fr;
+    }
+
+    .knowledge__container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
   

@@ -1079,39 +1079,56 @@ nav {
   --padding-container: 60px 0;
 }
 
+/*definir padding superior e inferior de la sección testimonio como 60px */
+
 .testimony__container {
   grid-template-columns: 28px 1fr 28px;
   gap: 0.9em;
 }
 
+/*dividir contenedor en 3 columnas y aplicar espacio entre columnas*/
+
 .testimony__arrow {
   width: 100%;
 }
+
+/* asignar ancho completo a las flechas */
 
 .testimony__course {
   margin-top: 15px;
 }
 
+/* agregar espacio superior de 15px al curso */
+
 .questions__title {
   font-size: 1rem;
 }
+/* tamaño de letra de título igual a 1rem */
 
 .footer__title {
   justify-self: start;
   margin-bottom: 15px;
 }
 
+/* alinear título a la izquierda y separar con margen inferior */
+
 .nav--footer {
   padding-bottom: 60px;
 }
+
+/* agregar padding inferior de 60px en nav del footer */
 
 .nav__link--footer {
   justify-content: space-between;
 }
 
+/*espaciar los links del footer de manera uniforme */
+
 .footer__inputs {
   flex-wrap: wrap;
 }
+
+/*permitir que los inputs se acomoden en varias líneas */
 
 .footer__input {
   flex-basis: 100%;
@@ -1119,10 +1136,14 @@ nav {
   margin-bottom: 16px;
 }
 
+/* hacer que cada input ocupe toda la fila y separe 16px abajo */
+
 .footer__submit {
   margin-right: auto;
   margin-left: 0;
 }
+
+/* mover botón hacia la izquierda automáticamente */
 
 .topbar {
   background-image: url(/images/fondo.jpg);
@@ -1134,6 +1155,8 @@ nav {
   align-items: center;
 }
 
+/* establecer fondo, altura fija y centrar contenido en topbar */
+
 body {
   display: flex;
   flex-direction: column;
@@ -1141,9 +1164,13 @@ body {
   margin: 0;
 }
 
+/* mostrar elementos del body en columna y ocupar toda la altura de la ventana */
+
 .hero {
   flex: 1;
 }
+
+/* permitir que la sección principal crezca lo necesario */
 
 .main-footer {
   background-color: #000000;
@@ -1151,6 +1178,8 @@ body {
   padding: 1rem 0;
   text-align: center;
 }
+
+/* establecer fondo negro, texto gris y centrar texto del footer */
 
 .footer-container {
   max-width: 1000px;
@@ -1160,11 +1189,15 @@ body {
   gap: 0.5rem;
 }
 
+/* centrar el contenido y espaciar los elementos verticalmente */
+
 .footer-nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
+
+/* mostrar los links en fila y separarlos con 1rem */
 
 .footer-nav a {
   color: #f5f5f5;
@@ -1174,6 +1207,8 @@ body {
 .footer-nav a:hover {
   color: #fff;
 }
+
+/* estilizar links y aclararlos al hacer hover */
 
 @media (max-width: 600px) {
   .footer-container {
@@ -1185,11 +1220,15 @@ body {
   }
 }
 
+/*si el ancho es menor a 600px: hacer nav del footer en columna con menos separación */
+
 .navigation-arrows {
   display: flex;
   justify-content: space-between;
   margin: 20px;
 }
+
+/* alinear flechas a izquierda y derecha y agregar margen */
 
 .navigation-arrows a {
   text-decoration: none;
@@ -1197,3 +1236,6 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
+
+/* estilizar enlaces de navegación con fuente clara y grande */
+

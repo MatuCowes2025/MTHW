@@ -8,30 +8,25 @@
   <title>MTHW - Tienda de ropa</title>
 
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-
-  <!-- Aplica un estilo base uniforme entre navegadores -->
-  <!-- Cargar estilos que igualan la apariencia entre navegadores -->
   <link rel="stylesheet" href="CSS/normalize.css">
-
-  <!-- Aplica los estilos del sitio -->
-  <!-- Aplicar diseño visual personalizado al sitio -->
   <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 
 <body>
   <header class="hero">
     <nav class="container">
-      <!-- Ícono del menú hamburguesa (visible en móviles) -->
-      <!-- Mostrar imagen que activa el menú en pantallas pequeñas -->
+      <!-- Ícono del menú hamburguesa -->
       <div class="nav__toggle">
         <img src="./images/menu.svg" alt="Menú">
       </div>
 
+      <!-- Logo de la tienda -->
       <div class="nav__logo">
         <img src="./images/favicon.png" alt="MTHW Logo" class="nav__logo-img">
       </div>
 
-      <ul class="nav__link nav__link--menu">
+      <!-- Menú de navegación -->
+      <nav class="nav__link">
         <li class="nav__items">
           <a href="coleccion.html" id="coleccion-link" style="text-decoration: none; color: inherit;">Colección</a>
         </li>
@@ -41,16 +36,15 @@
         <li class="nav__items">
           <a href="contacto.html" class="contacto-link" style="text-decoration: none; color: inherit;">Contacto</a>
         </li>
-      </ul>
+        <img src="./images/close.svg" alt="Cerrar menú" class="nav__close" />
+      </nav>
     </nav>
 
+    <!-- Contenido del hero -->
     <section class="hero__container container">
       <h1 class="hero__title">El estilo se lleva en la piel y en MTHW.</h1>
       <p class="hero__paragraph">Calidad, estilo y diseño hechos para vos.</p>
 
-      <!-- Botón que redirige a la página de colección -->
-      <!-- Al hacer clic, ir a coleccion.html -->
-      <!-- Aplicar estilo directo (color, padding, borde redondeado) -->
       <a href="coleccion.html"
         style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
         Ver Colección de Ropa
@@ -58,17 +52,14 @@
     </section>
   </header>
 
-  <!-- Carga de JavaScript (comportamientos dinámicos, como menú) -->
-  <!-- Cargar funcionalidades como abrir/cerrar menú -->
   <script src="script.js"></script>
 
   <footer class="main-footer">
     <div class="footer-container">
-      <p>&copy; 2025 Matthew Cowes </p>
-      </nav>
+      <p>&copy; 2025 Matthew Cowes</p>
     </div>
   </footer>
-
 </body>
 
 </html>
+

@@ -1239,3 +1239,18 @@ body {
 
 /* estilizar enlaces de navegación con fuente clara y grande */
 
+.anuncio-responsive {
+  width: 100%;
+  max-width: 728px;
+  aspect-ratio: 728 / 90;
+  display: block;
+  margin: 30px auto;
+}
+
+@media (max-width: 768px) {
+  .anuncio-responsive {
+    max-width: 300px;
+    aspect-ratio: 300 / 600;
+  }
+}
+

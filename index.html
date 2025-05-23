@@ -10,68 +10,83 @@
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="CSS/normalize.css">
   <link rel="stylesheet" href="CSS/estilos.css">
+
+  <style>
+    .iframe-container {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .responsive-iframe {
+      width: 728px;
+      height: 90px;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .responsive-iframe {
+        width: 300px;
+        height: 600px;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <main>
     <header class="hero">
       <nav class="container">
-        <!-- Ícono del menú hamburguesa (sólo visible en pantallas pequeñas) -->
         <div class="nav__toggle">
           <img src="./images/menu.svg" alt="Menú">
         </div>
 
-        <!-- Logo de la tienda -->
         <div class="nav__logo">
           <img src="./images/favicon.png" alt="MTHW Logo" class="nav__logo-img">
         </div>
 
-        <!-- Menú de navegación -->
         <nav class="nav__link">
           <li class="nav__items">
-            <a href="coleccion.html" id="coleccion-link" style="text-decoration: none; color: inherit;">Colección</a>
+            <a href="coleccion.html" style="text-decoration: none; color: inherit;">Colección</a>
           </li>
           <li class="nav__items">
-            <a href="aboutus.html" id="about-link" style="text-decoration: none; color: inherit;">About us</a>
+            <a href="aboutus.html" style="text-decoration: none; color: inherit;">About us</a>
           </li>
           <li class="nav__items">
-            <a href="contacto.html" class="contacto-link" style="text-decoration: none; color: inherit;">Contacto</a>
+            <a href="contacto.html" style="text-decoration: none; color: inherit;">Contacto</a>
           </li>
           <img src="./images/close.svg" alt="Cerrar menú" class="nav__close" />
         </nav>
       </nav>
 
-      <!-- Contenido del hero -->
       <section class="hero__container container">
         <h1 class="hero__title">El estilo se lleva en la piel y en MTHW.</h1>
         <p class="hero__paragraph">Calidad, estilo y diseño hechos para vos.</p>
 
-        <a href="coleccion.html"
-          style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+        <a href="coleccion.html" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
           Ver Colección de Ropa
         </a>
       </section>
-
-      <!-- ANUNCIO RESPONSIVO MTHW -->
-      <iframe 
-        class="anuncio-responsive"
-        src="https://matucowes2025.github.io/anuncio.MTHW/"
-        style="border: none; width: 100%; height: 100%; max-width: 728px; aspect-ratio: 728 / 90; display: block; margin: 30px auto;"
-        title="Anuncio MTHW">
-      </iframe>
-
     </header>
 
-    <script src="script.js"></script>
+    <div class="iframe-container">
+      <iframe class="responsive-iframe"
+        src="https://mariaguzzo2324.github.io/sitio-web-maria/anuncio%20html.html"
+        title="Anuncio de compañera" loading="lazy">
+      </iframe>
+    </div>
+    
 
-    <footer class="main-footer">
-      <div class="footer-container">
-        <p>&copy; 2025 Matthew Cowes</p>
-      </div>
-    </footer>
   </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Matthew Cowes</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
-
 

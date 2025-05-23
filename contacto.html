@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto</title>
-  
-  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-  
-  <!-- Estilos base y estilos propios -->
-  <link rel="stylesheet" href="CSS/normalize.css">
-  <link rel="stylesheet" href="CSS/estilos.css">
+
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <link rel="stylesheet" href="CSS/estilos.css" />
+
+  <!-- Fuente Montserrat para la tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 
-  <body>
+<body>
   <!-- HEADER / LOGO -->
   <header class="topbar">
     <div class="nav__logo">
-      <img src="./images/favicon.png" alt="MTHW Logo" class="nav__logo-img">
+      <img src="./images/favicon.png" alt="MTHW Logo" class="nav__logo-img" />
     </div>
   </header>
 
   <!-- Flecha para volver a la página anterior -->
   <div class="navigation-arrows">
     <a href="aboutus.html">
-      <img src="./images/leftarrow.svg" alt="Anterior" class="arrow-icon">
+      <img src="./images/leftarrow.svg" alt="Anterior" class="arrow-icon" />
     </a>
   </div>
 
   <!-- SECCIÓN DE CONTACTO -->
   <main class="contact-container">
-    
     <!-- Información visible para el usuario -->
     <div class="contact-info">
       <h2>Contacto</h2>
@@ -39,38 +39,46 @@
       <p><strong>Ubicación:</strong> BS AS, AVELLANEDA</p>
       <p>
         Comunícate con nosotros vía mail o WhatsApp y te daremos una respuesta lo más rápida posible.
-        <br>
-        – MTHW
+        <br />– MTHW
       </p>
     </div>
-    
-    <form action="https://formsubmit.co/mthw@gmail.com" method="post" class="contact-form">
-  <label for="nombre">Nombre</label>
-  <input type="text" id="nombre" name="nombre" required>
 
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" required>
+    <!-- FORMULARIO -->
+    <form action="#" method="post" class="contact-form" id="contact-form">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required />
 
-  <label for="telefono">Teléfono</label>
-  <input type="tel" id="telefono" name="telefono">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
 
-  <label for="mensaje">Mensaje</label>
-  <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje acá..." required></textarea>
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" />
 
-  <!-- Botón que envía el formulario -->
-  <button type="submit">Enviar</button>
-</form>
+      <label for="mensaje">Mensaje</label>
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="5"
+        placeholder="Escribí tu mensaje acá..."
+        required
+      ></textarea>
 
+      <button type="submit">Enviar</button>
+    </form>
 
-
+    <!-- Contenedor de mensaje de éxito o error -->
+    <div id="form-message" class="form-message" style="display: none;"></div>
+  </main>
 
   <!-- Pie de página -->
   <footer class="main-footer">
     <div class="footer-container">
-      <p>&copy; 2025 Matthew Cowes </p>
+      <p>&copy; 2025 Matthew Cowes</p>
     </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-

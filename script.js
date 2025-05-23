@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () { 
   const toggleButton = document.querySelector(".nav__toggle");
   const menu = document.querySelector(".nav__link");
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    /* Función para corregir si llegamos a un clon (y volver al original correspondiente) */
+    /* Función para corregir si llegamos al final (y volver al original correspondiente) */
     function handleTransition() {
       carousel.style.transition = "none";
 
@@ -69,4 +69,38 @@ document.addEventListener("DOMContentLoaded", function () {
     container.querySelector(".prev").addEventListener("click", () => moveSlide(-1));
     container.querySelector(".next").addEventListener("click", () => moveSlide(1));
   });
+});
+
+(function () {
+  emailjs.init("cEnuDBLlc-qW1Akbv"); // tu public key
+})();
+
+const form = document.getElementById("contact-form");
+const formMessage = document.getElementById("form-message");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  emailjs
+    .sendForm("mthw2025", "template_ei5ud65", this)
+    .then(() => {
+      formMessage.textContent = "Formulario enviado con éxito, ¡gracias!";
+      formMessage.className = "form-message success";
+      formMessage.style.display = "block";
+      form.reset();
+
+      setTimeout(() => {
+        formMessage.style.display = "none";
+      }, 4000);
+    })
+    .catch((error) => {
+      formMessage.textContent = "Error al enviar el formulario, por favor intenta de nuevo.";
+      formMessage.className = "form-message error";
+      formMessage.style.display = "block";
+      console.error("EmailJS error:", error);
+
+      setTimeout(() => {
+        formMessage.style.display = "none";
+      }, 4000);
+    });
 });

@@ -1,46 +1,37 @@
 <!DOCTYPE html> 
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-   <!-- Ajustar diseño para dispositivos móviles -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>About us</title>
 
-   <!-- Ícono de pestaña (favicon) -->
-  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-
-   <!-- estilos propios del sitio -->
-  <link rel="stylesheet" href="CSS/normalize.css">
-  <link rel="stylesheet" href="CSS/estilos.css">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="CSS/normalize.css" />
+  <link rel="stylesheet" href="CSS/estilos.css" />
 </head>
 <body>
 
-   <!-- Encabezado con el logo -->
-  <header class="topbar">
-    <div class="nav__logo">
-      <img src="./images/favicon.png" alt="MTHW Logo" class="nav__logo-img">
+  <header class="city-header">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="./images/favicon.png" alt="Logo MTHW" class="center-logo" />
+      </a>
     </div>
+    <nav class="nav-bar">
+      <ul class="nav__menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="coleccion.html">Colección</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
-
-   <!-- Flechas para navegar entre páginas -->
-   <!-- Izquierda = colección; Derecha = contacto -->
-  <div class="navigation-arrows">
-    <a href="coleccion.html">
-      <img src="./images/leftarrow.svg" alt="Anterior" class="arrow-icon">
-    </a>
-    <a href="contacto.html">
-      <img src="./images/rightarrow.svg" alt="Siguiente" class="arrow-icon">
-    </a>
-  </div>
 
   <main>
     <section id="about-us" class="about-section">
       <div class="about-box">
 
-         <!-- Título principal de la sección -->
         <h2 class="about-title">Sobre Nosotros</h2>
 
         <div class="about-paragraph">
@@ -84,7 +75,6 @@
     </section>
   </main>
 
-   <!-- Pie de página -->
   <footer class="main-footer">
     <div class="footer-container">
       <p>&copy; 2025 Matthew Cowes</p>
@@ -93,4 +83,3 @@
 
 </body>
 </html>
-

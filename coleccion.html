@@ -6,37 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="CSS/coleccion.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+
   </head>
-  
 
-    <!-- Header -->
-    <header class="main-header">
-      <h1>Bienvenido a Nuestra Colección</h1>
-    </header>
+  <body>
+    <header class="city-header">
+  <div class="city-background"></div>
+  <!-- Logo centrado -->
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="./images/favicon.png" alt="Logo MTHW" class="center-logo" />
+    </a>
+  </div>
+  <nav class="nav-bar">
+    <ul class="nav__menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 
-     <!-- Navegacion de flechas -->
-    <div class="navigation-arrows">
-      <!-- Flecha hacia atrás -->
-      <a href="index.html">
-        <img src="./images/leftarrow.svg" alt="Anterior" class="arrow-icon" />
-      </a>
-       <!-- Flecha hacia adelante -->
-      <a href="aboutus.html">
-        <img src="./images/rightarrow.svg" alt="Siguiente" class="arrow-icon" />
-      </a>
-    </div>
+
 
     <main>
-       <!-- seccion catalogada -->
       <section class="catalogo">
-        
-         <!-- Titulo para la categoria de remeras -->
         <h2>Remeras</h2>
-
-          <!-- Contenedor de carrusel -->
         <div class="carousel-container">
           <div class="carousel">
-            <!-- Ítem del Carrusel: Remera Blanca -->
             <div class="carousel-item">
               <img src="images/remera blanca.jpg" alt="Remera Blanca" />
               <div class="texto">
@@ -44,7 +43,6 @@
                 <p>Remera cómoda y elegante, ideal para el día a día.</p>
               </div>
             </div>
-             <!-- Ítem del Carrusel: Remera Bordó -->
             <div class="carousel-item">
               <img src="images/remera bordo.jpg" alt="Remera Bordó" />
               <div class="texto">
@@ -52,7 +50,6 @@
                 <p>Remera de estilo único y color vibrante.</p>
               </div>
             </div>
-             <!-- Ítem del Carrusel: Remera Manga Larga -->
             <div class="carousel-item">
               <img src="images/manga larga.jpg" alt="Remera Manga Larga" />
               <div class="texto">
@@ -61,16 +58,13 @@
               </div>
             </div>
           </div>
-          <!-- Botones para mover el carrusel -->
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
         </div>
 
-         <!-- Titulo para la ctegoria buzo -->
         <h2>Buzos</h2>
         <div class="carousel-container">
           <div class="carousel">
-             <!-- Ítem del Carrusel: Buzo Beige -->
             <div class="carousel-item">
               <img src="images/buzo beij.jpg" alt="Buzo Beige" />
               <div class="texto">
@@ -78,7 +72,6 @@
                 <p>Buzo corte Boxy Fit estilo polo, cómodo y abrigado.</p>
               </div>
             </div>
-             <!-- Ítem del Carrusel: Buzo Tricolor -->
             <div class="carousel-item">
               <img src="images/sueter tricolor.jpg" alt="Buzo Tricolor" />
               <div class="texto">
@@ -86,7 +79,6 @@
                 <p>Corte Boxy Mid, para agregarle estilo a tu outfit.</p>
               </div>
             </div>
-             <!-- Ítem del Carrusel: Hoodie Negro -->
             <div class="carousel-item">
               <img src="images/Buzo negro.jpg" alt="Hoodie Negro" />
               <div class="texto">
@@ -95,16 +87,13 @@
               </div>
             </div>
           </div>
-           <!-- Botones para mover el carrusel -->
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
         </div>
 
-         <!-- Titulo para la categoria de pantalones -->
         <h2>Pantalones</h2>
         <div class="carousel-container">
           <div class="carousel">
-            <!-- Ítem del Carrusel: Pantalón Azul -->
             <div class="carousel-item">
               <img src="images/pantalon azul marino.jpg" alt="Pantalón Azul" />
               <div class="texto">
@@ -112,7 +101,6 @@
                 <p>Gabardina cómoda y moderna.</p>
               </div>
             </div>
-             <!-- Ítem del Carrusel: Baggy Jean Azul -->
             <div class="carousel-item">
               <img src="images/jean azul.jpg" alt="Jean Azul" />
               <div class="texto">
@@ -120,7 +108,6 @@
                 <p>Jean holgado azul con cintura ajustable.</p>
               </div>
             </div>
-             <!-- Ítem del Carrusel: Baggy Jean Oscuro -->
             <div class="carousel-item">
               <img src="images/Jean negro.jpg" alt="Jean Negro" />
               <div class="texto">
@@ -129,14 +116,12 @@
               </div>
             </div>
           </div>
-           <!-- Botones para mover el carrusel -->
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
         </div>
       </section>
     </main>
 
-     <!-- Pie de pagina -->
     <footer class="main-footer">
       <p>&copy; 2025 Matthew Cowes</p>
     </footer>

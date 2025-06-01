@@ -104,3 +104,23 @@ form.addEventListener("submit", function (event) {
       }, 4000);
     });
 });
+
+// Lightbox para ampliar imagen
+function abrirLightbox(src) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  lightbox.style.display = 'block';
+  lightboxImg.src = src;
+}
+
+function cerrarLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+
+window.onclick = function (e) {
+  const lightbox = document.getElementById('lightbox');
+  if (e.target === lightbox) {
+    cerrarLightbox();
+  }
+};
+

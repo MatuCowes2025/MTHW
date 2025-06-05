@@ -7,8 +7,6 @@ body {
   color: #f5f5f5; /* Texto claro */
 }
 
-/* HEADER PRINCIPAL */
-/* --- Header de catálogo --- */
 .main-header {
   background-color: #1f1f1f;
   color: #ffffff;
@@ -47,7 +45,7 @@ body {
   gap: 3rem; /* Espacio entre secciones (remeras, buzos, etc.) */
   padding: 2rem 1rem;
   max-width: 1000px;
-  margin: 2rem auto; /* Centrado horizontal */
+  margin: 2rem auto;
 }
 
 /* TÍTULOS DE CATEGORÍA */
@@ -80,7 +78,7 @@ body {
   background-color: #1e1e1e; /* Fondo oscuro para el item */
   border-radius: 12px; /* Bordes redondeados */
   padding: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   justify-content: center;
@@ -213,10 +211,10 @@ body {
   height: auto;
 }
 
-/* Barra negra del menú */
+
 .nav-bar {
-  background-color: #000; /* negro sólido */
-  padding: 20px 40px; /* más alto para hacerla gruesa y margen lateral */
+  background-color: #000;
+  padding: 20px 40px; 
 }
 
 /* Menú alineado a la derecha con margen */
